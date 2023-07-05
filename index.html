@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Agent Example</title>
+    <title>播放M3U8视频</title>
 </head>
 <body>
+    <video id="videoPlayer" controls></video>
+
     <script>
-        // 获取用户 User Agent
-        var userAgent = navigator.userAgent;
+        // 获取video元素
+        var video = document.getElementById("videoPlayer");
 
-        // 弹窗显示 User Agent
-        alert("User Agent: " + userAgent);
+        // 设置视频源为M3U8格式的视频文件
+        video.src = "https://video2.51daao.com/btt1/2020/10/20201016/dZRVMUIn/index.m3u8";
 
-        // 在页面上显示 User Agent
-        var userAgentElement = document.createElement("p");
-        userAgentElement.textContent = "User Agent: " + userAgent;
-        document.body.appendChild(userAgentElement);
+        // 播放视频
+        video.play();
     </script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Agent Example</title>
+</head>
+<body>
+    <script>
+        // 获取用户 User Agent
+        var userAgent = navigator.userAgent;
+
+        // 弹窗显示 User Agent
+        alert("User Agent: " + userAgent);
+
+        // 在页面上显示 User Agent
+        var userAgentElement = document.createElement("p");
+        userAgentElement.textContent = "User Agent: " + userAgent;
+        document.body.appendChild(userAgentElement);
+    </script>
+</body>
+</html>
